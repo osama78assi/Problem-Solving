@@ -29,7 +29,7 @@ int main() {
             if(i!=j) {
                 cout << "Enter 1 If Vertex " << i+1 << " Is Adjacent To " << j+1 << " , Otherwise 0: ";
                 cin >> graph[i][j];
-                // This Line Just For Undirected Graph
+                // This Line Just For Undirected Graph Else Handle It By Yourself
                 graph[j][i] = graph[i][j];
             }
             else
