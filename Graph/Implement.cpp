@@ -22,12 +22,14 @@ int main() {
     cin >> v;
     int graph[10][10];
     cout << "\n";
-    //Take Input Of Adjacency Of Each Pair Of Vertexes
+    // Take Input Of Adjacency Of Each Pair Of Vertexes
     for(i = 0; i < v; i++) {
         for(j = i; j < v; j++) {
+            // This Condition Just If There No Loop
             if(i!=j) {
                 cout << "Enter 1 If Vertex " << i+1 << " Is Adjacent To " << j+1 << " , Otherwise 0: ";
                 cin >> graph[i][j];
+                // This Line Just For Undirected Graph
                 graph[j][i] = graph[i][j];
             }
             else
