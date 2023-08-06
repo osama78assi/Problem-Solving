@@ -16,6 +16,11 @@ public:
     void getSalary() { cout << "Salary: " << salary << "$\n"; }
     void getNick() { cout << nickName << ". " << name << "\n"; }
     // Constructor
+    /*
+    Rule One: Public
+    Rule Two: Void (Doesn't Has Return Data Type)
+    Rule Three: Has The Same Name As Class
+    */
     employee(string Name, string Company, int Age) {
         name = Name;
         company = Company;
