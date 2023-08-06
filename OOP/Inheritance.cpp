@@ -22,8 +22,10 @@ public:
         cout << "Salary: " << salary << "$\n";
     }
 };
-// Inherit From Class One With All Public Things
-// Like A Method, Properties...etc
+//-----------------------------------------------------------*
+// Modifier Keyword Here To Tell Everthing That Your Inherit |
+// publick, private and protected                            |
+//-----------------------------------------------------------*
 class developer : public employee {
 private:
     string work;
