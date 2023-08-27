@@ -14,7 +14,6 @@ public:
         age = Age;
         salary = 5000;
     }
-
     virtual void details() {
         cout << "Name: " << name << "\n";
         cout << "Work For: " << company << "\n";
@@ -37,7 +36,6 @@ public:
         : employee(Name, Company, Age) {
         work = Work;
     }
-
     void details() override {
         employee::details(); // Call the base class function
         cout << "Specialty: " << work << "\n";
