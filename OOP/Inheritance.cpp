@@ -23,7 +23,8 @@ public:
 };
 //-----------------------------------------------------------*
 // Modifier Keyword Here To Tell Everthing That Your Inherit |
-// publick, private and protected                            |
+// public, private and protected                             |
+// That Mean It's Can Sees Everything From Its Parent        |
 //-----------------------------------------------------------*
 class developer : public employee {
 private:
