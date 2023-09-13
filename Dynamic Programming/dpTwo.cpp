@@ -32,6 +32,21 @@ int dpFindBiggest(int r, int c) {
     int path2 = dpFindBiggest(r + 1, c);
     return visited.at(r).at(c) = arr.at(r).at(c) + max(path1, path2);
 }
+// Another Way
+int findBiggest2(int r, int c) {
+    if(r == arr.size()-1 && c == arr.at(0).size()-1) // Base Case
+        return arr.at(r).at(c);
+    if(valid(r+1, c) && valid(r, c+1)) {
+        if(arr.at(r+1).at(c) >= arr.at(r).at(c+1))
+            return arr.at(r).at(c) + findBiggest2(r+1, c);
+         return arr.at(r).at(c) + findBiggest2(r, c+1);
+    }
+    else if(valid(r+1, c))
+        return arr.at(r).at(c) + findBiggest2(r+1, c);
+    else if(valid(r, c+1))
+        return arr.at(r).at(c) + findBiggest2(r, c+1);
+    return 0;
+}
 int main()
 {
     /*
